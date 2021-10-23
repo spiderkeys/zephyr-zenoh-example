@@ -1,0 +1,6 @@
+# Basic module definition
+build:
+  settings:
+    module_ext_root: .
+  kconfig: Kconfig
+  cmake: .

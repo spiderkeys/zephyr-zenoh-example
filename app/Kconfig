@@ -1,0 +1,12 @@
+menu "Zephyr"
+source "Kconfig.zephyr"
+endmenu
+
+module = APP
+module-str = APP
+
+config ZENOH_ROUTER_LOCATOR
+	string "Zenoh Router Locator"
+	default "udp/fd10:9b50:100e:0:1e34:1a03:78b8:923b:7474"
+	help
+	  A valid locator for a zenohd service. [udp/tcp]/[ipv4/ipv6 addr]:[port]

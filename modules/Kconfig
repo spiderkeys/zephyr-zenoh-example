@@ -1,0 +1,3 @@
+menu "Extra Modules"
+    rsource "zenoh-pico/Kconfig"
+endmenu

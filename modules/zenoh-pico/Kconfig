@@ -1,0 +1,18 @@
+config ZEPHYR_ZENOH-PICO_MODULE
+	bool
+
+menuconfig ZENOH_PICO
+	bool "Zenoh-pico Support"
+	select POSIX_API
+	help
+	  This option enables the Zenoh-Pico library.
+
+if ZENOH_PICO
+
+config APP_LINK_WITH_ZENOH_PICO
+    bool "Link application with Zenoh-Pico"
+    default y
+    help
+      Request Zephyr to link the Zenoh-Pico library with the application.
+
+endif # ZENOH

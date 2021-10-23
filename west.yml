@@ -1,0 +1,19 @@
+manifest:
+  self:
+    path: zephyr-zenoh-example
+
+  remotes:
+    - name: zephyrproject-rtos
+      url-base: https://github.com/zephyrproject-rtos
+    - name: zenoh-pico
+      url-base: https://github.com/spiderkeys
+
+  projects:
+    - name: zephyr
+      remote: zephyrproject-rtos
+      revision: zephyr-v2.7.0
+      import: true
+    - name: zenoh-pico
+      remote: zenoh-pico
+      revision: master
+      path: modules/lib/zenoh-pico
